@@ -13,6 +13,7 @@
 		E6C93E141D73DDF800B4FC15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E131D73DDF800B4FC15 /* ViewController.m */; };
 		E6C93E191D73DDF800B4FC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C93E181D73DDF800B4FC15 /* Assets.xcassets */; };
 		E6C93E261D73DFDC00B4FC15 /* AdsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */; };
+		E6CE63691D741F9A008AC73B /* BitmapCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = E6CE63681D741F9A008AC73B /* BitmapCreater.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,8 @@
 		E6C93E1D1D73DDF800B4FC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C93E241D73DFDC00B4FC15 /* AdsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsScrollView.h; sourceTree = "<group>"; };
 		E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsScrollView.m; sourceTree = "<group>"; };
+		E6CE63671D741F9A008AC73B /* BitmapCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BitmapCreater.h; sourceTree = "<group>"; };
+		E6CE63681D741F9A008AC73B /* BitmapCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitmapCreater.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,8 @@
 				E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */,
 				E6950B711D740E0800459A8B /* CATextLayerView.h */,
 				E6950B721D740E0800459A8B /* CATextLayerView.m */,
+				E6CE63671D741F9A008AC73B /* BitmapCreater.h */,
+				E6CE63681D741F9A008AC73B /* BitmapCreater.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				E6C93E261D73DFDC00B4FC15 /* AdsScrollView.m in Sources */,
 				E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */,
 				E6C93E141D73DDF800B4FC15 /* ViewController.m in Sources */,
+				E6CE63691D741F9A008AC73B /* BitmapCreater.m in Sources */,
 				E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */,
 				E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */,
 			);
