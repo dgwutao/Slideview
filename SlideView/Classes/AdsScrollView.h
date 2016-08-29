@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "AMPageControl.h"
+//#import "AMPageControl.h"
 
 typedef NS_ENUM(NSUInteger, UIPageControlShowStyle)
 {
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSUInteger, AdTitleShowStyle)
 @interface AdsScrollView : UIView<UIScrollViewDelegate>
 
 @property (strong, nonatomic) UIScrollView *adScrollView;
-@property (strong, nonatomic) AMPageControl *pageControl;
+//@property (strong, nonatomic) AMPageControl *pageControl;
 @property (strong, nonatomic) NSArray *imageLinkURL;
 @property (strong, nonatomic) NSArray *adTitleArray;
 @property (assign, nonatomic) UIPageControlShowStyle PageControlShowStyle;

@@ -7,8 +7,8 @@
 //
 
 #import "AdsScrollView.h"
-#import "UIImageView+WebCache.h"
-#import "AMPageControl.h"
+//#import "UIImageView+WebCache.h"
+//#import "AMPageControl.h"
 
 #define kAdViewWidth  _adScrollView.bounds.size.width
 #define kAdViewHeight  _adScrollView.bounds.size.height
@@ -140,7 +140,7 @@
         _adScrollView.scrollEnabled = NO;
         self.rightImageIndex = 0;
         if (self.centerImageIndex < _imageLinkURL.count) {
-            [_centerImageView sd_setImageWithURL:_imageLinkURL[self.centerImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
+            //[_centerImageView sd_setImageWithURL:_imageLinkURL[self.centerImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
         }
     }else{
         _adScrollView.scrollEnabled = YES;
@@ -159,7 +159,7 @@
     if(adTitleStyle == AdTitleShowStyleNone || _adTitleArray.count == 0) return;
     _centerAdLabel = [[UILabel alloc]init];
     _centerAdLabel.backgroundColor = [UIColor clearColor];
-    _centerAdLabel.textColor = [UIColor colorWithHexValue:0xFFFFFF alpha:1.0];
+    //_centerAdLabel.textColor = [UIColor colorWithHexValue:0xFFFFFF alpha:1.0];
     _centerAdLabel.numberOfLines = 1;
     _centerAdLabel.font = [UIFont boldSystemFontOfSize:12];
     _centerAdLabel.textAlignment = NSTextAlignmentLeft;
@@ -167,35 +167,35 @@
         _centerAdLabel.text = _adTitleArray[self.centerImageIndex];
     }
     NSInteger spacing = 0;
-    if (_pageControl) {
-        spacing = _pageControl.frame.size.width;
-    }
+//    if (_pageControl) {
+//        spacing = _pageControl.frame.size.width;
+//    }
     _centerAdLabel.frame = CGRectMake(10, kAdViewHeight - 25, kAdViewWidth - spacing - 22, 20);
     [self addSubview:_centerAdLabel];
 }
 
 - (void)setPageControlShowStyle:(UIPageControlShowStyle)PageControlShowStyle
 {
-    if (_pageControl) {
-        [_pageControl removeFromSuperview];
-        _pageControl = nil;
-    }
-    if (PageControlShowStyle == UIPageControlShowStyleNone || _imageLinkURL.count < 2) return;
-    
-    _pageControl = [[AMPageControl alloc]init];
-    _pageControl.numberOfPages = _imageLinkURL.count;
-    if (PageControlShowStyle == UIPageControlShowStyleLeft) {
-        _pageControl.frame = CGRectMake(0, kAdViewHeight - 20, 20 * _pageControl.numberOfPages, 20);
-    }
-    else if (PageControlShowStyle == UIPageControlShowStyleCenter) {
-        _pageControl.frame = CGRectMake(0, 0, 20*_pageControl.numberOfPages, 20);
-        _pageControl.center = CGPointMake(kAdViewWidth/2.0, kAdViewHeight - 10);
-    }
-    else if (PageControlShowStyle == UIPageControlShowStyleRight) {
-        _pageControl.frame = CGRectMake(kAdViewWidth - 10 - _pageControl.dotsWidth, kAdViewHeight - 17, _pageControl.dotsWidth, 7);
-    }
-    _pageControl.currentPage = 0;
-    [self addSubview:_pageControl];
+//    if (_pageControl) {
+//        [_pageControl removeFromSuperview];
+//        _pageControl = nil;
+//    }
+//    if (PageControlShowStyle == UIPageControlShowStyleNone || _imageLinkURL.count < 2) return;
+//    
+//    _pageControl = [[AMPageControl alloc]init];
+//    _pageControl.numberOfPages = _imageLinkURL.count;
+//    if (PageControlShowStyle == UIPageControlShowStyleLeft) {
+//        _pageControl.frame = CGRectMake(0, kAdViewHeight - 20, 20 * _pageControl.numberOfPages, 20);
+//    }
+//    else if (PageControlShowStyle == UIPageControlShowStyleCenter) {
+//        _pageControl.frame = CGRectMake(0, 0, 20*_pageControl.numberOfPages, 20);
+//        _pageControl.center = CGPointMake(kAdViewWidth/2.0, kAdViewHeight - 10);
+//    }
+//    else if (PageControlShowStyle == UIPageControlShowStyleRight) {
+//        _pageControl.frame = CGRectMake(kAdViewWidth - 10 - _pageControl.dotsWidth, kAdViewHeight - 17, _pageControl.dotsWidth, 7);
+//    }
+//    _pageControl.currentPage = 0;
+//    [self addSubview:_pageControl];
 }
 
 - (void)timerTick:(NSTimer*)timer
@@ -239,7 +239,7 @@
     
     [self renderImages];
     
-    _pageControl.currentPage = self.centerImageIndex;
+    //_pageControl.currentPage = self.centerImageIndex;
     if (_adTitleArray && _adTitleArray.count > 0){
         if (self.centerImageIndex < _adTitleArray.count){
             _centerAdLabel.text = _adTitleArray[self.centerImageIndex];
@@ -255,15 +255,15 @@
 - (void)renderImages
 {
     if (self.leftImageIndex < _imageLinkURL.count) {
-        [_leftImageView sd_setImageWithURL:_imageLinkURL[self.leftImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
+        //[_leftImageView sd_setImageWithURL:_imageLinkURL[self.leftImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
     }
     
     if (self.centerImageIndex < _imageLinkURL.count) {
-        [_centerImageView sd_setImageWithURL:_imageLinkURL[self.centerImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
+        //[_centerImageView sd_setImageWithURL:_imageLinkURL[self.centerImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
     }
     
     if (self.rightImageIndex < _imageLinkURL.count) {
-        [_rightImageView sd_setImageWithURL:_imageLinkURL[self.rightImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
+        //[_rightImageView sd_setImageWithURL:_imageLinkURL[self.rightImageIndex] placeholderImage:[UIImage imageNamed:self.placeHolder]];
     }
 }
 

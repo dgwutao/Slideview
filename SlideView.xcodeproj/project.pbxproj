@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6950B721D740E0800459A8B /* CATextLayerView.m */; };
 		E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E0D1D73DDF800B4FC15 /* main.m */; };
 		E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E101D73DDF800B4FC15 /* AppDelegate.m */; };
 		E6C93E141D73DDF800B4FC15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E131D73DDF800B4FC15 /* ViewController.m */; };
 		E6C93E191D73DDF800B4FC15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6C93E181D73DDF800B4FC15 /* Assets.xcassets */; };
-		E6C93E1C1D73DDF800B4FC15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6C93E1A1D73DDF800B4FC15 /* LaunchScreen.storyboard */; };
 		E6C93E261D73DFDC00B4FC15 /* AdsScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6950B711D740E0800459A8B /* CATextLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextLayerView.h; sourceTree = "<group>"; };
+		E6950B721D740E0800459A8B /* CATextLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextLayerView.m; sourceTree = "<group>"; };
 		E6C93E091D73DDF800B4FC15 /* SlideView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6C93E0D1D73DDF800B4FC15 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E6C93E0F1D73DDF800B4FC15 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -23,7 +25,6 @@
 		E6C93E121D73DDF800B4FC15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E6C93E131D73DDF800B4FC15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E6C93E181D73DDF800B4FC15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E6C93E1B1D73DDF800B4FC15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E6C93E1D1D73DDF800B4FC15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E6C93E241D73DFDC00B4FC15 /* AdsScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdsScrollView.h; sourceTree = "<group>"; };
 		E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdsScrollView.m; sourceTree = "<group>"; };
@@ -65,7 +66,6 @@
 				E6C93E121D73DDF800B4FC15 /* ViewController.h */,
 				E6C93E131D73DDF800B4FC15 /* ViewController.m */,
 				E6C93E181D73DDF800B4FC15 /* Assets.xcassets */,
-				E6C93E1A1D73DDF800B4FC15 /* LaunchScreen.storyboard */,
 				E6C93E1D1D73DDF800B4FC15 /* Info.plist */,
 				E6C93E0C1D73DDF800B4FC15 /* Supporting Files */,
 			);
@@ -85,6 +85,8 @@
 			children = (
 				E6C93E241D73DFDC00B4FC15 /* AdsScrollView.h */,
 				E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */,
+				E6950B711D740E0800459A8B /* CATextLayerView.h */,
+				E6950B721D740E0800459A8B /* CATextLayerView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -146,7 +148,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E6C93E1C1D73DDF800B4FC15 /* LaunchScreen.storyboard in Resources */,
 				E6C93E191D73DDF800B4FC15 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -159,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E6C93E261D73DFDC00B4FC15 /* AdsScrollView.m in Sources */,
+				E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */,
 				E6C93E141D73DDF800B4FC15 /* ViewController.m in Sources */,
 				E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */,
 				E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */,
@@ -166,17 +168,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		E6C93E1A1D73DDF800B4FC15 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E6C93E1B1D73DDF800B4FC15 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E6C93E1E1D73DDF800B4FC15 /* Debug */ = {
@@ -304,6 +295,7 @@
 				E6C93E221D73DDF800B4FC15 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
