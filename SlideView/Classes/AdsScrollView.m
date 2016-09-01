@@ -83,6 +83,15 @@
     return self;
 }
 
+-(void)willMoveToSuperview:(UIView *)newSuperview{
+    if (!newSuperview) {
+        if (self.timer) {
+            [self.timer invalidate];
+            self.timer = nil;
+        }
+    }
+}
+
 - (void)setupTimer
 {
     if (self.timer) {
@@ -91,6 +100,7 @@
     }
     if (_isNeedCycleRoll && _imageLinkURL.count > 1){
         self.timer = [NSTimer scheduledTimerWithTimeInterval:_adMoveTime target:self selector:@selector(timerTick:) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
         _isTimeup = NO;
     }
 }

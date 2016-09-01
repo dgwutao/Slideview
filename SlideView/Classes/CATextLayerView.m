@@ -44,6 +44,12 @@
     [self.layer addSublayer:self.textLayer];
 }
 
+-(void)willMoveToSuperview:(UIView *)newSuperview{
+    if (newSuperview) {
+        NSInteger max = NSIntegerMax;
+    }
+}
+
 - (void)setString:(NSString *)string{
     _string = string;
     self.textLayer.string = string;
