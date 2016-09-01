@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E66D229B1D751CB700115A60 /* StitchingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D229A1D751CB700115A60 /* StitchingImageView.m */; };
 		E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6950B721D740E0800459A8B /* CATextLayerView.m */; };
 		E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E0D1D73DDF800B4FC15 /* main.m */; };
 		E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E101D73DDF800B4FC15 /* AppDelegate.m */; };
@@ -18,8 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E66D22991D751CB700115A60 /* StitchingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchingImageView.h; sourceTree = "<group>"; };
-		E66D229A1D751CB700115A60 /* StitchingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchingImageView.m; sourceTree = "<group>"; };
 		E6950B711D740E0800459A8B /* CATextLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextLayerView.h; sourceTree = "<group>"; };
 		E6950B721D740E0800459A8B /* CATextLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextLayerView.m; sourceTree = "<group>"; };
 		E6C93E091D73DDF800B4FC15 /* SlideView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,8 +92,6 @@
 				E6950B721D740E0800459A8B /* CATextLayerView.m */,
 				E6CE63671D741F9A008AC73B /* BitmapCreater.h */,
 				E6CE63681D741F9A008AC73B /* BitmapCreater.m */,
-				E66D22991D751CB700115A60 /* StitchingImageView.h */,
-				E66D229A1D751CB700115A60 /* StitchingImageView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -175,7 +170,6 @@
 				E6CE63691D741F9A008AC73B /* BitmapCreater.m in Sources */,
 				E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */,
 				E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */,
-				E66D229B1D751CB700115A60 /* StitchingImageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
