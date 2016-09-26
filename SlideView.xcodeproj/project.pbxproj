@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E66D229B1D751CB700115A60 /* StitchingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E66D229A1D751CB700115A60 /* StitchingImageView.m */; };
+		E672E2ED1D993BB70012537D /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E672E2EA1D993BB70012537D /* SRWebSocket.m */; };
 		E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6950B721D740E0800459A8B /* CATextLayerView.m */; };
 		E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E0D1D73DDF800B4FC15 /* main.m */; };
 		E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6C93E101D73DDF800B4FC15 /* AppDelegate.m */; };
@@ -20,6 +21,9 @@
 /* Begin PBXFileReference section */
 		E66D22991D751CB700115A60 /* StitchingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StitchingImageView.h; sourceTree = "<group>"; };
 		E66D229A1D751CB700115A60 /* StitchingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StitchingImageView.m; sourceTree = "<group>"; };
+		E672E2EA1D993BB70012537D /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		E672E2EB1D993BB70012537D /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		E672E2EC1D993BB70012537D /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
 		E6950B711D740E0800459A8B /* CATextLayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CATextLayerView.h; sourceTree = "<group>"; };
 		E6950B721D740E0800459A8B /* CATextLayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CATextLayerView.m; sourceTree = "<group>"; };
 		E6C93E091D73DDF800B4FC15 /* SlideView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlideView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,6 +93,9 @@
 		E6C93E231D73DF9A00B4FC15 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E672E2EC1D993BB70012537D /* SRWebSocket.h */,
+				E672E2EA1D993BB70012537D /* SRWebSocket.m */,
+				E672E2EB1D993BB70012537D /* SocketRocket-Prefix.pch */,
 				E6C93E241D73DFDC00B4FC15 /* AdsScrollView.h */,
 				E6C93E251D73DFDC00B4FC15 /* AdsScrollView.m */,
 				E6950B711D740E0800459A8B /* CATextLayerView.h */,
@@ -173,6 +180,7 @@
 				E6950B731D740E0800459A8B /* CATextLayerView.m in Sources */,
 				E6C93E141D73DDF800B4FC15 /* ViewController.m in Sources */,
 				E6CE63691D741F9A008AC73B /* BitmapCreater.m in Sources */,
+				E672E2ED1D993BB70012537D /* SRWebSocket.m in Sources */,
 				E6C93E111D73DDF800B4FC15 /* AppDelegate.m in Sources */,
 				E6C93E0E1D73DDF800B4FC15 /* main.m in Sources */,
 				E66D229B1D751CB700115A60 /* StitchingImageView.m in Sources */,
